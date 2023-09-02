@@ -20,6 +20,7 @@ for filepath in filepaths:
     pdf.cell(w=50, h=8, txt=f"Date: {date}", ln=1)
 
     df = pd.read_excel(filepath, sheet_name="Sheet 1")
+
     for index, row in df.iterrows():
         pdf.set_font(family="Times", size=10)
         pdf.set_text_color(80,80,80)
