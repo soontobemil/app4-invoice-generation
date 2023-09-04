@@ -26,7 +26,7 @@ for filepath in filepaths:
     pdf.set_font(family="Times", size=10)
     pdf.set_text_color(80, 80, 80)
     pdf.cell(w=30, h=8, txt=columns[0], border=1)
-    pdf.cell(w=30, h=8, txt=columns[1], border=1)
+    pdf.cell(w=70, h=8, txt=columns[1], border=1)
     pdf.cell(w=30, h=8, txt=columns[2], border=1)
     pdf.cell(w=30, h=8, txt=columns[3], border=1)
     pdf.cell(w=30, h=8, txt=columns[4], border=1, ln=1)
