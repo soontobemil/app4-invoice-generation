@@ -22,8 +22,9 @@ for filepath in filepaths:
     df = pd.read_excel(filepath, sheet_name="Sheet 1")
 
     # Add a header
-    columns = list(df.columns)
-    pdf.set_font(family="Times", size=10)
+    columns = df.columns
+    columns = [item.replace("_","").title() for item in columns]
+    pdf.set_font(family="Times", style="B", size=10)
     pdf.set_text_color(80, 80, 80)
     pdf.cell(w=30, h=8, txt=columns[0], border=1)
     pdf.cell(w=70, h=8, txt=columns[1], border=1)
