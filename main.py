@@ -51,7 +51,7 @@ for filepath in filepaths:
     pdf.cell(w=30, h=8, txt="", border=1)
     pdf.cell(w=30, h=8, txt=str(total_sum), border=1, ln=1)
 
-    pdf.set_font(family="Times", style="B", size=10)
+    pdf.set_font(family="Times", style="B", size=15)
     pdf.cell(w=50, h=8, txt=f"The total price is ${total_sum}", ln=1)
     pdf.cell(w=50, h=8, txt="Jay's Company Ltd.")
 
